@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 
 const ContentSection = (props) => (
-    <div className="ContentSection">
+    <div id={props.id} className="ContentSection">
         <div className="header">
             <h1>{props.title}</h1>
         </div>
