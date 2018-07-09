@@ -4,10 +4,10 @@ import './styles.css';
 
 const ContentSection = (props) => (
     <div id={props.id} className="ContentSection">
-        <div className="header">
+        <div className="Header">
             <h1>{props.title}</h1>
         </div>
-        <div className="content">
+        <div className="Content">
             {props.content}
         </div>
     </div>

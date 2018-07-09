@@ -35,10 +35,10 @@ export default class Menu extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="mr-auto" navbar>
               <NavItem>
-                <Scrollchor to="#project" animate={{ offset: -60 }} className="nav-link">O projeto</Scrollchor>
+                <Scrollchor to="/ #project" className="nav-link">O projeto</Scrollchor>
               </NavItem>
               <NavItem>
-                <Scrollchor to="#about" className="nav-link">Quem Somos</Scrollchor>
+                <Scrollchor to="/ #about" className="nav-link">Quem Somos</Scrollchor>
               </NavItem>
             </Nav>
             <Nav className="ml-auto" navbar>
@@ -46,10 +46,7 @@ export default class Menu extends React.Component {
                 <NavLink href="#entrar">Entrar</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="" disabled>/</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#criarconta">Cadastro</NavLink>
+                <NavLink href="#criarconta">Criar conta</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
