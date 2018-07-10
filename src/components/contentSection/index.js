@@ -10,6 +10,7 @@ const ContentSection = (props) => (
         <div className="Content">
             {props.content}
         </div>
+        {props.children}
     </div>
 )
 
