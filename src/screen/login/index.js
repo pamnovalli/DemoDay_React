@@ -2,7 +2,7 @@ import React from 'react';
 import './styles.css';
 import Menu from '../../components/menu';
 import Footer from '../../components/footer';
-import { InputGroup, InputGroupAddon, InputGroupText, Input } from 'reactstrap';
+import { InputGroup, Form, Button, Input } from 'reactstrap';
 
 const Login = (props) => {
   return (
@@ -12,15 +12,17 @@ const Login = (props) => {
        <br />
        <br />
       <Menu />
-      <InputGroup>
-        <Input placeholder="yourpassword" />
-        <InputGroupAddon addonType="append">12345@oi</InputGroupAddon>
+      <Form className="form">
+      <h1> Voluntarize </h1>
+      <InputGroup className="input">
+        <Input placeholder="username" />
       </InputGroup>
       <br />
-      <InputGroup>
-        <Input placeholder="username" />
-        <InputGroupAddon addonType="append">@example.com</InputGroupAddon>
+      <InputGroup className="input">
+        <Input placeholder="yourpassword" />
       </InputGroup>
+      <Button color="primary">Login</Button>
+      </Form>
       <br />
       <Footer />
     </div>
