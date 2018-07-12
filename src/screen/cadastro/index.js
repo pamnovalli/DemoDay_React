@@ -13,77 +13,90 @@ export default class Cadastro extends React.Component {
             <Menu />
             <br/>
             <br/>
-            <br/>
-            <br/>
+            <h1>Cadastre-se</h1>
             <Form>
-            <FormGroup className="input">
-            <Input type="email" name="email" id="exampleEmail" placeholder="email" />
+            <FormGroup className="Input">
+            <p>Nome</p>
+            <Input type="text" name="nome" id="Nome" placeholder="Insira nome e sobrenome:" />
             </FormGroup>
-            <FormGroup className="input">
-            <Label for="examplePassword">Password</Label>
-            <Input type="password" name="password" id="examplePassword" placeholder="password placeholder" />
+            <FormGroup className="Input">
+            <p>E-mail</p>
+            <Input type="email" name="email" id="Email" placeholder="Insira seu e-mail:" />
             </FormGroup>
-            <FormGroup className="input">
-            <Label for="exampleSelect">Select</Label>
+            <FormGroup className="Input">
+            <p>RG</p>
+            <Input type="text" name="rg" id="RG" placeholder="Insira somente números:" />
+            </FormGroup>
+            <div id="senha"> 
+            <FormGroup className="Input">
+            <p>Senha</p>
+            <Input type="password" name="senha" id="Senha" placeholder="Crie sua senha:" />
+            <p id="obs">*use de 6 a 20 caracteres</p>
+            </FormGroup>
+            <FormGroup className="Input">
+            <Input type="password" name="csenha" id="Csenha" placeholder="Confirme sua senha:" />
+            </FormGroup>
+            </div>
+            <FormGroup className="Input">
+            <p>Sexo</p>
             <Input type="select" name="select" id="exampleSelect">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+            <option>Feminino</option>
+            <option>Masculino</option>
+            <option>Outro</option>
+            <option>Prefiro não informar</option>
             </Input>
             </FormGroup>
-            <FormGroup>
-            <Label for="exampleSelectMulti">Select Multiple</Label>
-            <Input type="select" name="selectMulti" id="exampleSelectMulti" multiple>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-            </Input>
+            <FormGroup className="Input">
+            <p>Foto de Perfil</p>
+            <FormText color="muted">
+            Escolha uma foto com resolução de 300X300 pixels
+            </FormText>
+            <Input type="file" name="file" id="exampleFile" />
             </FormGroup>
-            <FormGroup>
-            <Label for="exampleText">Text Area</Label>
+            <br/>
+            <p className="Input">Selecione seus interesses:</p>
+            <FormGroup className="Input" check>
+            <Input type="checkbox" />{' '}
+            Língua Estrangeira
+            <br/>
+            <Input type="checkbox" />{' '}
+            Tecnologia
+            <br/>
+            <Input type="checkbox" />{' '}
+            Ambientalismo
+            <br/>
+            <Input type="checkbox" />{' '}
+            Esporte
+            <br/>
+            <Input type="checkbox" />{' '}
+            Culinária
+            <br/>
+            <Input type="checkbox" />{' '}
+            Proteção Animal
+            <br/>
+            <Input type="checkbox" />{' '}
+            Assistência à moradores de rua
+            <br/>
+            <Input type="checkbox" />{' '}
+            Alfabetização de adultos
+            <br/>
+            <Input type="checkbox" />{' '}
+            Crianças carentes
+            <br/>
+            <Input type="checkbox" />{' '}
+            Idosos
+            <br/>
+            <Input type="checkbox" />{' '}
+            <Input type="text" name="nome" id="Outro" placeholder="Outros" />
+            <br/>
+            <br/>
+            </FormGroup>
+            <FormGroup className="Input">
+            <p>Nos conte sobre seus objetivos ao se cadastrar em nossa plataforma:</p>
             <Input type="textarea" name="text" id="exampleText" />
             </FormGroup>
-            <FormGroup>
-            <Label for="exampleFile">File</Label>
-            <Input type="file" name="file" id="exampleFile" />
-            <FormText color="muted">
-            This is some placeholder block-level help text for the above input.
-            It's a bit lighter and easily wraps to a new line.
-            </FormText>
-            </FormGroup>
-            <FormGroup tag="fieldset">
-            <legend>Radio Buttons</legend>
-            <FormGroup check>
-            <Label check>
-            <Input type="radio" name="radio1" />{' '}
-            Option one is this and that—be sure to include why it's great
-            </Label>
-            </FormGroup>
-            <FormGroup check>
-            <Label check>
-            <Input type="radio" name="radio1" />{' '}
-            Option two can be something else and selecting it will deselect option one
-            </Label>
-            </FormGroup>
-            <FormGroup check disabled>
-            <Label check>
-            <Input type="radio" name="radio1" disabled />{' '}
-            Option three is disabled
-            </Label>
-            </FormGroup>
-            </FormGroup>
-            <FormGroup check>
-            <Label check>
-            <Input type="checkbox" />{' '}
-            Check me out
-            </Label>
-            </FormGroup>
-            <Button>Submit</Button>
-            </Form>
+            <Button>Enviar</Button>
+            </Form>  
             <Footer />
             </div>
         );
