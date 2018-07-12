@@ -3,13 +3,12 @@ import './styles.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import {
-  Collapse,
   Navbar,
-  NavbarToggler,
   NavbarBrand,
   Nav,
   NavItem,
   NavLink,
+  CardImg,
   } from 'reactstrap';
 
 export default class Footer extends React.Component {
@@ -23,11 +22,17 @@ export default class Footer extends React.Component {
         <Navbar color="light" light expand="md">
           <NavbarBrand href="/">Contatos</NavbarBrand>
             <Nav className="mx-auto">
-              <NavItem>
+              <NavItem className="Sociais">
+                <CardImg top width="100%" src="ehdemoday\EHDemoDay\imagens\iconeemail.png" alt="Card image cap" />
                 <NavLink href="/">Gmail</NavLink>
               </NavItem>
-              <NavItem>
+              <NavItem className="Sociais">
+                <CardImg top width="100%" src="ehdemoday\EHDemoDay\imagens\Iconefacebook (1).png" alt="Card image cap" />
                 <NavLink href="/">Facebook</NavLink>
+              </NavItem>
+              <NavItem className="Sociais">
+                <CardImg top width="100%" src="ehdemoday\EHDemoDay\imagens\Iconeinstagram.png" alt="Card image cap" />
+                <NavLink href="/">Instagram</NavLink>
               </NavItem>
             </Nav>
         </Navbar>
