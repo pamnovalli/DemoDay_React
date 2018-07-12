@@ -1,0 +1,77 @@
+.Perfil{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+h3{
+    font-size: 150%;
+}
+
+.Sessao{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-top: 10%;
+}
+
+.VerTodos{
+    float: right;
+    margin-top: 50px;
+}
+
+.SessaoDois{
+    width: 40%;
+}
+
+.Tags{
+    display: flex;
+}
+
+.Card{
+   width: 100px;
+   height: 120px;
+   margin-left: 80%;
+}
+
+Button{
+    margin-right: 10px;
+}
+
+.Interesses{
+    float: left;
+    margin-top: 100px;
+}
+
+.MinhasOngs{
+    border-color:  rgb(255, 134, 95);
+    border-width: medium;
+    border-style: solid;
+    padding: 10%;
+    margin-bottom: 100px;
+}
+
+.MeusGrupos{
+    border-color:  rgb(255, 134, 95);
+    border-width: medium;
+    border-style: solid;
+    padding: 10%
+}
+
+@media(min-width: 768px){
+   .Card{
+    margin-left: 100%;
+   }
+   .Sessao{
+       width: 80%;
+   }
+   .MinhasOngs{
+    width: 50%;
+    margin-left: auto;
+   }
+   .MeusGrupos{
+    width: 50%;
+    margin-left: auto;
+   }
+}
