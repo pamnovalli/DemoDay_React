@@ -43,7 +43,7 @@ export default class Menu extends React.Component {
             </Nav>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="#entrar">Entrar</NavLink>
+                <NavLink href="login">Entrar</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="#criarconta">Criar conta</NavLink>
