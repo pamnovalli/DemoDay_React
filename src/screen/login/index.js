@@ -7,10 +7,6 @@ import { InputGroup, Form, Button, Input } from 'reactstrap';
 const Login = (props) => {
   return (
     <div>
-       <br />
-       <br />
-       <br />
-       <br />
       <Menu />
       <Form className="form">
       <h1> Voluntarize </h1>
@@ -23,7 +19,6 @@ const Login = (props) => {
       </InputGroup>
       <Button color="primary">Login</Button>
       </Form>
-      <br />
       <Footer />
     </div>
   );
