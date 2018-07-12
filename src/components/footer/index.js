@@ -20,7 +20,7 @@ export default class Footer extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="light" light expand="md" fixed={`bottom`}>
+        <Navbar color="light" light expand="md">
           <NavbarBrand href="/">Contatos</NavbarBrand>
             <Nav className="mx-auto">
               <NavItem>

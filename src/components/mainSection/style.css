@@ -1,7 +1,7 @@
 .MainSection {
     display: flex;
     height: 480px;
-    background-color: gainsboro;
+    background-color: transparent;
     background-image: url('https://images.pexels.com/photos/1081223/pexels-photo-1081223.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     background-repeat:no-repeat;
     background-size:length;    
@@ -16,12 +16,15 @@
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
+    text-align:center;
 }
 
 .Form {
-    width: 40%;
+    min-width: 40%;
+    max-width: 90%;
 }
 
-input{
-   text-align:center;
+.MainInput{
+   text-align: center;
+   height: 60px;
 }

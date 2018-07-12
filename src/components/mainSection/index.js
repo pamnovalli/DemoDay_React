@@ -14,9 +14,9 @@ render() {
 
             <Form className="Form">
                 <FormGroup>
-                    <Input type="search" name="search" id="main_search" placeholder="Ex: Greenpeace" />
+                    <Input className="MainInput" type="search" name="search" id="main_search" placeholder="Ex: Greenpeace" />
                 </FormGroup>
-                <Button color="primary">Buscar</Button>
+                <Button type="submit" color="primary">Buscar</Button>
             </Form>
             </div>
         </div>
