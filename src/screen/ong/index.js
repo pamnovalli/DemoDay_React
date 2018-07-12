@@ -13,8 +13,9 @@ class Ong extends Component {
         );
       }
     }
-    
-    export default Ong;
-    
+
 
 }
+
+export default Ong;
+    
