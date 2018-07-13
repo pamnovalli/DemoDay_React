@@ -1,0 +1,44 @@
+.Pagina{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#descricao{
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#perfilong{
+    display: flex;
+    justify-content: space-around;
+}
+
+#imagem{
+    width: 30%;
+    height: 40%;
+}
+
+#sociais{
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.Tags{
+    display: flex;
+}
+
+Button{
+    margin-right: 10px;
+}
+
+@media(min-width: 768px){
+    #imagem{
+        width: 15%;
+        margin-bottom: 50px;
+    }
+    h1{
+        margin-left: 10%;
+    }
+}
