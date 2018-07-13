@@ -9,15 +9,15 @@ const Login = (props) => {
     <div>
       <Menu />
       <Form className="form">
-      <h1> Voluntarize </h1>
-      <InputGroup className="input">
-        <Input placeholder="username" />
-      </InputGroup>
-      <br />
-      <InputGroup className="input">
-        <Input placeholder="yourpassword" />
-      </InputGroup>
-      <Button color="primary">Login</Button>
+        <h1> Voluntarize </h1>
+        <InputGroup className="input">
+          <Input placeholder="username" />
+        </InputGroup>
+        <br />
+        <InputGroup className="input">
+          <Input placeholder="yourpassword" />
+        </InputGroup>
+        <Button color="primary">Login</Button>
       </Form>
       <Footer />
     </div>
@@ -25,3 +25,4 @@ const Login = (props) => {
 };
 
 export default Login;
+

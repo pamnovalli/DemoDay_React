@@ -2,9 +2,9 @@ import React from 'react';
 import './styles.css';
 import Menu from '../../components/menu';
 import Footer from '../../components/footer';
-
 import { Button, ButtonGroup, Container, Nav, NavLink, Card, CardImg, CardBody,
     CardTitle} from 'reactstrap';
+
 
 export default class Perfil extends React.Component {
     render() {
