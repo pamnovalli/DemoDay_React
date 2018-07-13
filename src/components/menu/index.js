@@ -40,13 +40,16 @@ export default class Menu extends React.Component {
               <NavItem>
                 <Scrollchor to="#about" className="nav-link">Quem Somos</Scrollchor>
               </NavItem>
+              <NavItem>
+                <Scrollchor to="#cadastrarong" className="nav-link">Cadastrar ONGS</Scrollchor>
+              </NavItem>
             </Nav>
             <Nav className="ml-auto" navbar>
               <NavItem>
                 <NavLink href="login">Entrar</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#criarconta">Criar conta</NavLink>
+                <NavLink href="cadastro">Criar conta</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
