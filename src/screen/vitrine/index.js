@@ -2,53 +2,73 @@ import React, { Component } from 'react';
 import './styles.css';
 import Menu from '../../components/menu';
 import Footer from '../../components/footer';
-import { Card, Button, CardImg, CardTitle, CardText, CardDeck,
-  CardSubtitle, CardBody } from 'reactstrap';
+import { Card, Button, CardImg, CardTitle, CardText,
+  CardSubtitle, CardBody, Container, Form, FormGroup, Input } from 'reactstrap';
  
  const Vitrine = (props) => {
    return (
     <div>
       <Menu />
-     <CardDeck className="deck">
-       <Card className="card">
-         <CardImg src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="Card image cap" />
-         <CardBody>
-           <CardTitle>Card title</CardTitle>
-           <CardSubtitle>Card subtitle</CardSubtitle>
-           <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
-           <Button>Button</Button>
-         </CardBody>
-       </Card>
-       <Card className="card">
-         <CardImg src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="Card image cap" />
-         <CardBody>
-           <CardTitle>Card title</CardTitle>
-           <CardSubtitle>Card subtitle</CardSubtitle>
-           <CardText>This card has supporting text below as a natural lead-in to additional content.</CardText>
-           <Button>Button</Button>
-         </CardBody>
-       </Card>
-       </CardDeck>
-       <CardDeck className="deck">
-       <Card className="card">
-         <CardImg  src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="Card image cap" />
-         <CardBody>
-           <CardTitle>Card title</CardTitle>
-           <CardSubtitle>Card subtitle</CardSubtitle>
-           <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</CardText>
-           <Button>Button</Button>
-         </CardBody>
-       </Card>
-       <Card className="card">
-         <CardImg  src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="Card image cap" />
-         <CardBody>
-           <CardTitle>Card title</CardTitle>
-           <CardSubtitle>Card subtitle</CardSubtitle>
-           <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</CardText>
-           <Button>Button</Button>
-         </CardBody>
-       </Card>
-     </CardDeck>
+      <Container className="Tela">
+          <FormGroup className="Input">
+            <Input type="search" name="search" id="main_search" placeholder="Ex: Greenpeace" />
+            <Button id="buscar" type="submit" color="primary">Buscar</Button>
+          </FormGroup>
+        <h2 id="titulo" >ONGS</h2>
+        <Container className="Cards">
+          <Card>
+            <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+            <CardBody>
+                <CardTitle>Nome Ong</CardTitle>
+                <CardSubtitle>Interesses</CardSubtitle>
+                <CardText>Pequena Descrição</CardText>
+            </CardBody>
+          </Card>
+          <Card>
+            <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+            <CardBody>
+                <CardTitle>Nome Ong</CardTitle>
+                <CardSubtitle>Interesses</CardSubtitle>
+                <CardText>Pequena Descrição</CardText>
+            </CardBody>
+          </Card>
+          <Card>
+            <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+            <CardBody>
+                <CardTitle>Nome Ong</CardTitle>
+                <CardSubtitle>Interesses</CardSubtitle>
+                <CardText>Pequena Descrição</CardText>
+            </CardBody>
+          </Card>
+        </Container>
+        <h2 id="titulo">Grupos</h2>
+        <Container className="Cards">
+          <Card>
+            <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+            <CardBody>
+                <CardTitle>Nome Ong</CardTitle>
+                <CardSubtitle>Interesses</CardSubtitle>
+                <CardText>Pequena Descrição</CardText>
+            </CardBody>
+          </Card>
+          <Card>
+            <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+            <CardBody>
+                <CardTitle>Nome Ong</CardTitle>
+                <CardSubtitle>Interesses</CardSubtitle>
+                <CardText>Pequena Descrição</CardText>
+            </CardBody>
+          </Card>
+          <Card>
+            <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+            <CardBody>
+                <CardTitle>Nome Ong</CardTitle>
+                <CardSubtitle>Interesses</CardSubtitle>
+                <CardText>Pequena Descrição</CardText>
+            </CardBody>
+          </Card>
+        </Container>
+      </Container>
      <Footer />
     </div>
    );
