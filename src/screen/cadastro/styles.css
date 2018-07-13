@@ -1,0 +1,39 @@
+h1{
+    margin: 25px;
+}
+p{
+    margin:0;
+    font-weight: bold;
+}
+.Input{
+    margin-left: 5vw;
+    width: 46vw;
+}
+#obs{
+    font-size: 13px;
+    color: red;
+    font-weight: normal;
+}
+#Outro{
+    border: none;
+    border-bottom: 0.5px solid gray;
+    border-radius: 0;
+}
+button{
+    margin: 10px;
+    margin-left: 70vw;
+}
+
+@media(min-width: 768px){
+    .Input{
+        margin-left: 27vw;
+       
+    }
+    h1{
+        margin-left: 26vw;
+    }
+    button{
+        margin: 10px;
+        margin-left: 90vw;
+    }
+}
