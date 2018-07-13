@@ -30,7 +30,7 @@ export default class Menu extends React.Component {
     return (
       <div>
         <Navbar color="light" light sticky-top expand="md" fixed={`top`}>
-          <NavbarBrand href="/">Voluntarize</NavbarBrand>
+        <NavbarBrand href="/">Voluntarize</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="mr-auto" navbar>
