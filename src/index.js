@@ -5,6 +5,7 @@ import App from './screen/app/App';
 import Login from './screen/login';
 import Cadastro from './screen/cadastro';
 import Perfil from './screen/perfil';
+import CriarGrupo from './screen/criarGrupo';
 import registerServiceWorker from './registerServiceWorker';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
@@ -15,6 +16,8 @@ ReactDOM.render(
     <Route path="/cadastro" exact={true} component={Cadastro} />
     <Route path="/login" exact={true} component={Login} />
     <Route path="/perfil" exact={true} component={Perfil} />
+        <Route path="/" exact={true} component={App} />
+        <Route path="/criarGrupo" exact={true} component={CriarGrupo} />
     </Switch>
 </ BrowserRouter>,  document.getElementById('root'));
 registerServiceWorker();
