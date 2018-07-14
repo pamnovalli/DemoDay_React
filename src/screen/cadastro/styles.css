@@ -21,7 +21,8 @@ p{
 }
 button{
     margin: 10px;
-    margin-left: 70vw;
+    width: 10vw;
+    margin-left: 45vw;
 }
 
 @media(min-width: 768px){
@@ -34,6 +35,7 @@ button{
     }
     button{
         margin: 10px;
-        margin-left: 90vw;
+        width: 10vw;
+        margin-left: 45vw;
     }
 }
