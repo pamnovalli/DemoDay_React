@@ -1,12 +1,7 @@
 
 .Form{
     margin-top: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-bottom: 420px;
-    width: 60%;
-    margin-left: 10%;
 }
 
 .Input{
@@ -14,7 +9,6 @@
 }
 
 #login{
-    margin-right: 110%;
 }
 
 h1{
