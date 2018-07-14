@@ -1,0 +1,13 @@
+.UserProfilePanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.UserProfileContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 580px;
+}
