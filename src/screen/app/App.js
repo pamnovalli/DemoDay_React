@@ -23,9 +23,9 @@ class App extends Component {
         bio: "Atualizar depois."
       },
       {
-          name: "Pamela",
-          work: "Desenvolvedora Frontend",
-          bio: "Atualizar depois."
+        name: "Pamela",
+        work: "Desenvolvedora Frontend",
+        bio: "Atualizar depois."
       }],
     }
   }
