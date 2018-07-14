@@ -13,11 +13,6 @@ class App extends Component {
     super(props)
     this.state = {
       people: [{
-        name: "Pamela",
-        work: "Desenvolvedora Frontend",
-        bio: "Atualizar depois."
-      },
-      {
         name: "Ana Maria",
         work: "Desenvolvedora Frontend",
         bio: "Atualizar depois"
@@ -26,6 +21,11 @@ class App extends Component {
         name: "Laiane",
         work: "Desenvolvedora Fronted",
         bio: "Atualizar depois."
+      },
+      {
+          name: "Pamela",
+          work: "Desenvolvedora Frontend",
+          bio: "Atualizar depois."
       }],
     }
   }

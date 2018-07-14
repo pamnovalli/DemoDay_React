@@ -1,15 +1,17 @@
-.ContentSection {
+.ContentSectionBackground {
     display: flex;
     flex-direction: column;
     background-color: white;
-    min-height: 60px;
-    padding: 8%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
-.Header {
+.ContentSectionHeader {
 
 }
 
-.Content {
-    margin-top: 24px;
+.ContentSectionContent {
+    margin-top: 16px;
 }
