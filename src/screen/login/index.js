@@ -18,8 +18,8 @@ class Login extends Component {
         <InputGroup className="Input">
           <Input placeholder="yourpassword" />
         </InputGroup>
-        <Button id="login" color="primary">Login</Button>
       </Form>
+      <Button id="login" color="primary">Login</Button>
       <Footer />
     </div>
   );
