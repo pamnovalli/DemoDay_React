@@ -16,15 +16,29 @@
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    text-align:center;
 }
 
-.Form {
-    min-width: 40%;
+.MainSectionForm {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    margin-top: 36px;
+    min-width: 60%;
     max-width: 90%;
 }
 
-.MainInput{
+.MainSectionGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.MainSectionInput {
    text-align: center;
+   height: 60px;
+}
+
+.MainSectionSearchButton {
+   text-align: center;
+   width: 20%;
    height: 60px;
 }
