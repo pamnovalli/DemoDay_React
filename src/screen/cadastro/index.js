@@ -113,7 +113,7 @@ class SingUpForm extends Component {
                         <Label for="profile-pic">Nos conte sobre seus objetivos ao se cadastrar em nossa plataforma:</Label>
                         <Input type="textarea" name="text" id="exampleText" />
                     </FormGroup>
-                    <Button>Enviar</Button>
+                    <Button id="registration-button" color="primary">Registrar</Button>
                 </Form>
             </div>
         )
