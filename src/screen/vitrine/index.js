@@ -5,9 +5,10 @@ import Footer from '../../components/footer';
 import { Card, Button, CardImg, CardTitle, CardText,
   CardSubtitle, CardBody, Container, Form, FormGroup, Input } from 'reactstrap';
  
- const Vitrine = (props) => {
-   return (
-    <div>
+  class Vitrine extends Component {
+    render() {
+      return (
+      <div>
       <Menu />
       <Container className="Tela">
           <FormGroup className="Input">
@@ -16,26 +17,32 @@ import { Card, Button, CardImg, CardTitle, CardText,
           </FormGroup>
         <h2 id="titulo" >ONGS</h2>
         <Container className="Cards">
-          <Card>
-            <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+          <Card className="Ong">
+            <Container className= "Nome">
+              <CardImg className="Image" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+              <CardTitle className="Titulo">Nome Ong</CardTitle>
+            </Container>
             <CardBody>
-                <CardTitle>Nome Ong</CardTitle>
                 <CardSubtitle>Interesses</CardSubtitle>
                 <CardText>Pequena Descrição</CardText>
             </CardBody>
           </Card>
-          <Card>
-            <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+          <Card className="Ong">
+            <Container className= "Nome">
+              <CardImg className="Image" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+              <CardTitle className="Titulo">Nome Ong</CardTitle>
+            </Container>
             <CardBody>
-                <CardTitle>Nome Ong</CardTitle>
                 <CardSubtitle>Interesses</CardSubtitle>
                 <CardText>Pequena Descrição</CardText>
             </CardBody>
           </Card>
-          <Card>
-            <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+          <Card className="Ong">
+            <Container className= "Nome">
+              <CardImg className="Image" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+              <CardTitle className="Titulo">Nome Ong</CardTitle>
+            </Container>
             <CardBody>
-                <CardTitle>Nome Ong</CardTitle>
                 <CardSubtitle>Interesses</CardSubtitle>
                 <CardText>Pequena Descrição</CardText>
             </CardBody>
@@ -43,26 +50,32 @@ import { Card, Button, CardImg, CardTitle, CardText,
         </Container>
         <h2 id="titulo">Grupos</h2>
         <Container className="Cards">
-          <Card>
-            <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+          <Card className="Ong">
+            <Container className= "Nome">
+              <CardImg className="Image" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+              <CardTitle className="Titulo">Nome Grupo</CardTitle>
+            </Container>
             <CardBody>
-                <CardTitle>Nome Ong</CardTitle>
                 <CardSubtitle>Interesses</CardSubtitle>
                 <CardText>Pequena Descrição</CardText>
             </CardBody>
           </Card>
-          <Card>
-            <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+          <Card className="Ong">
+            <Container className= "Nome">
+              <CardImg className="Image" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+              <CardTitle className="Titulo">Nome Grupo</CardTitle>
+            </Container>
             <CardBody>
-                <CardTitle>Nome Ong</CardTitle>
                 <CardSubtitle>Interesses</CardSubtitle>
                 <CardText>Pequena Descrição</CardText>
             </CardBody>
           </Card>
-          <Card>
-            <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+          <Card className="Ong">
+            <Container className= "Nome">
+              <CardImg className="Image" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+              <CardTitle className="Titulo">Nome Grupo</CardTitle>
+            </Container>
             <CardBody>
-                <CardTitle>Nome Ong</CardTitle>
                 <CardSubtitle>Interesses</CardSubtitle>
                 <CardText>Pequena Descrição</CardText>
             </CardBody>
@@ -70,9 +83,10 @@ import { Card, Button, CardImg, CardTitle, CardText,
         </Container>
       </Container>
      <Footer />
-    </div>
-   );
- };
+      </div>
+    );
+  }
+}
  
   
   export default Vitrine;

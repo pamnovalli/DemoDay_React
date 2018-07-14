@@ -8,20 +8,44 @@
     margin-left: 50px;
 }
 .Cards{
-    display: flex;
-    justify-content: space-around;
+    display: block;
     margin-bottom: 100px;
-    margin-top: 100px;
+    margin-top: 50px;
 }
-
-.Pesquisa {
-    align-items: center;
-    margin-bottom: 50px;
+.Ong{
+    margin-right: 20px;
+    margin-bottom: 40px;
 }
 
 .Input{
     display: flex;
     align-items: center;
     min-width: 40%;
-    max-width: 70%;
+    max-width: 50%;
+    margin-left: 20%;
+    margin-bottom: 50px;
+}
+
+.Image{
+    width: 50%;
+    padding: 5%;
+}
+
+.Nome{
+    display: flex;
+}
+
+.Titulo{
+    margin-top: 50px;
+}
+
+@media (min-width: 768px){
+    .Cards{
+        display: flex;
+        justify-content: space-around;
+    }
+    .Titulo{
+        margin-left: 10%;
+    }
+
 }
