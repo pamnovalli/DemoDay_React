@@ -1,51 +1,44 @@
-
-.Tela{
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-#titulo{
-    margin-left: 50px;
-}
-.Cards{
-    display: block;
-    margin-bottom: 100px;
-    margin-top: 50px;
-}
-.Ong{
-    margin-right: 20px;
-    margin-bottom: 40px;
-}
-
-.Input{
+.VitrineContainer {
     display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    min-width: 40%;
-    max-width: 50%;
-    margin-left: 20%;
-    margin-bottom: 50px;
+    background-color: transparent;
+    padding-top: 100px;
 }
 
-.Image{
-    width: 50%;
-    padding: 5%;
-}
-
-.Nome{
+.VitrineSearchContainer {
     display: flex;
+    flex: 1;
+    flex-direction: row;
+    background-color: transparent;
+    min-width: 20%;
+    max-width: 500px;
+}
+.VitrineShelfsContainer {
+    display:flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: transparent;
 }
 
-.Titulo{
-    margin-top: 50px;
+.VitrineShelfContainer {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: transparent;
+    padding: 64px;
 }
 
-@media (min-width: 768px){
-    .Cards{
-        display: flex;
-        justify-content: space-around;
-    }
-    .Titulo{
-        margin-left: 10%;
-    }
+.VitrineShelf {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
 
+.child {
+  margin: 6px;
 }

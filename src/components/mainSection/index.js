@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Button, Form, FormGroup, Input } from 'reactstrap';
+import { Link } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css';
 
@@ -12,12 +13,14 @@ render() {
             <h1> VOLUNTARIZE </h1>
             <h4>A maior plataforma de ONGs e Comunidades do Brasil!</h4>
 
-            <Form className="MainSectionForm">
+            <Form className="MainSectionForm" action="/vitrine">
                 <FormGroup className="MainSectionGroup">
                     <Input className="MainSectionInput" type="search" name="search" id="main_search" placeholder="Ex: Greenpeace" />
                 </FormGroup>
+                    <Button className="MainSectionSearchButton" type="submit" color="primary" >
+                        Buscar
+                    </Button>
             </Form>
-                <Button className="MainSectionSearchButton" type="submit" color="primary">Buscar</Button>
             </div>
         </div>
     );

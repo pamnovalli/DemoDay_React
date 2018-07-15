@@ -2,88 +2,104 @@ import React, { Component } from 'react';
 import './styles.css';
 import Menu from '../../components/menu';
 import Footer from '../../components/footer';
-import { Card, Button, CardImg, CardTitle, CardText,
-  CardSubtitle, CardBody, Container, Form, FormGroup, Input } from 'reactstrap';
+import CardCommunity from '../../components/cardCommunity'
+import { Button, Form, Input } from 'reactstrap';
  
   class Vitrine extends Component {
+
+    constructor(props) {
+      super(props)
+      this.state = {
+        ongs: [{
+          title: "ONG 1",
+          subtitle: "Subtitulo da ONG 1",
+          description: "Descrição da ONG 1",
+          imageURL: "https://d13q7w9s0p5d73.cloudfront.net/uploads/bvmf/aggregator/avatar/198/03886f0a-f86b-4ab7-9675-eb3e9fd8beaa.jpg"
+        },
+        {
+          title: "ONG 2",
+          subtitle: "Subtitulo da ONG 2",
+          description: "Descrição da ONG 2",
+          imageURL: "http://blog.crb6.org.br/wp-content/uploads/2014/11/NOTA-3.31.jpg"
+        },
+        {
+          title: "ONG 3",
+          subtitle: "Subtitulo da ONG 3",
+          description: "Descrição da ONG 3",
+          imageURL: ""
+        }
+      ],
+        communities: [{
+          title: "Comunidade 1",
+          subtitle: "Subtitulo da Comunidade 1",
+          description: "Descrição da Comunidade 1",
+          imageURL: ""
+        },
+        {
+          title: "Comunidade 2",
+          subtitle: "Subtitulo da Comunidade 2",
+          description: "Descrição da Comunidade 2",
+          imageURL: ""
+        },
+        {
+          title: "Comunidade 3",
+          subtitle: "Subtitulo da Comunidade 3",
+          description: "Descrição da Comunidade 3",
+          imageURL: ""
+        },
+        {
+          title: "Comunidade 4",
+          subtitle: "Subtitulo da Comunidade 4",
+          description: "Descrição da Comunidade 4",
+          imageURL: ""
+        }]
+      }
+    }
+
+    vitrine = () => (
+        <div className="VitrineShelfsContainer">
+          <div className="VitrineShelfContainer">
+            <h1>Organizações Não-Governamentais - ONGs</h1>
+            <div className="VitrineShelf">
+              {this.state.ongs.map(ong => (
+                <CardCommunity 
+                  title={ong.title} 
+                  subtitle={ong.subtitle} 
+                  description={ong.description} 
+                  imageURL={ong.imageURL}/>
+                ))}
+            </div>
+          </div>
+          <div className="VitrineShelfContainer">
+            <h1>Grupos e Comunidades</h1>
+            <div className="VitrineShelf">
+            {this.state.communities.map(community => (
+              <CardCommunity 
+                title={community.title}
+                subtitle={community.subtitle} 
+                description={community.description} 
+                imageURL={community.imageURL}/>
+              ))}
+            </div>
+          </div>
+        </div >
+      )
+
     render() {
       return (
-      <div>
-      <Menu />
-      <Container className="Tela">
-          <FormGroup className="Input">
-            <Input type="search" name="search" id="main_search" placeholder="Ex: Greenpeace" />
-            <Button id="buscar" type="submit" color="primary">Buscar</Button>
-          </FormGroup>
-        <h2 id="titulo" >ONGS</h2>
-        <Container className="Cards">
-          <Card className="Ong">
-            <Container className= "Teto">
-              <CardImg className="Image" width="30%" src="https://polenfiles.blob.core.windows.net/ongs/ong-teto-brasil-thumb.png" alt="Card image cap" />
-              <CardTitle className="Titulo">Nome Ong</CardTitle>
-            </Container>
-            <CardBody>
-                <CardSubtitle>Interesses</CardSubtitle>
-                <CardText>Pequena Descrição</CardText>
-            </CardBody>
-          </Card>
-          <Card className="Ong">
-            <Container className= "Nome">
-              <CardImg className="Image" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
-              <CardTitle className="Titulo">Nome Ong</CardTitle>
-            </Container>
-            <CardBody>
-                <CardSubtitle>Interesses</CardSubtitle>
-                <CardText>Pequena Descrição</CardText>
-            </CardBody>
-          </Card>
-          <Card className="Ong">
-            <Container className= "Nome">
-              <CardImg className="Image" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
-              <CardTitle className="Titulo">Nome Ong</CardTitle>
-            </Container>
-            <CardBody>
-                <CardSubtitle>Interesses</CardSubtitle>
-                <CardText>Pequena Descrição</CardText>
-            </CardBody>
-          </Card>
-        </Container>
-        <h2 id="titulo">Grupos</h2>
-        <Container className="Cards">
-          <Card className="Ong">
-            <Container className= "Nome">
-              <CardImg className="Image" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
-              <CardTitle className="Titulo">Nome Grupo</CardTitle>
-            </Container>
-            <CardBody>
-                <CardSubtitle>Interesses</CardSubtitle>
-                <CardText>Pequena Descrição</CardText>
-            </CardBody>
-          </Card>
-          <Card className="Ong">
-            <Container className= "Nome">
-              <CardImg className="Image" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
-              <CardTitle className="Titulo">Nome Grupo</CardTitle>
-            </Container>
-            <CardBody>
-                <CardSubtitle>Interesses</CardSubtitle>
-                <CardText>Pequena Descrição</CardText>
-            </CardBody>
-          </Card>
-          <Card className="Ong">
-            <Container className= "Nome">
-              <CardImg className="Image" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
-              <CardTitle className="Titulo">Nome Grupo</CardTitle>
-            </Container>
-            <CardBody>
-                <CardSubtitle>Interesses</CardSubtitle>
-                <CardText>Pequena Descrição</CardText>
-            </CardBody>
-          </Card>
-        </Container>
-      </Container>
-     <Footer />
-      </div>
+        <div>
+          <Menu />
+          <div className="VitrineContainer">
+            <div>
+              <Form className="VitrineSearchContainer" action="/vitrine">
+                <Input type="search" name="search" id="main_search" placeholder="Ex: Greenpeace"/>
+                <Button id="buscar" type="submit" color="primary">Buscar</Button>
+              </Form>
+            </div>
+            {this.vitrine()}
+          </div>
+          <Footer />
+        </div>
     );
   }
 }

@@ -14,7 +14,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 ReactDOM.render(
 <BrowserRouter>
     <Switch>
-        <Route path="/vitrine" exact={true} component={Vitrine} />
+        <Route path="/vitrine"  exact={false} component={Vitrine} />
         <Route path="/" exact={true} component={App} />
         <Route path="/cadastro" exact={true} component={Cadastro} />
         <Route path="/login" exact={true} component={Login} />
