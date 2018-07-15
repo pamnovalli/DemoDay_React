@@ -1,0 +1,40 @@
+.VitrineContainer {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding-top: 100px;
+}
+
+.VitrineSearchContainer {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    background-color: transparent;
+    min-width: 20%;
+    max-width: 500px;
+}
+.VitrineShelfsContainer {
+    display:flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+.VitrineShelfContainer {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: transparent;
+    padding: 64px;
+}
+
+.VitrineShelf {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}

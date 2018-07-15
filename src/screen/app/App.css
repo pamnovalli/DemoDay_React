@@ -28,6 +28,7 @@
   justify-content: space-around;
   align-items: stretch;
   margin-top: 24px;
+  flex-wrap: wrap;
 }
 
 @keyframes App-logo-spin {

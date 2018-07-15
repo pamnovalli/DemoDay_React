@@ -21,6 +21,7 @@
 .MainSectionForm {
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: transparent;
     margin-top: 36px;
     min-width: 60%;
@@ -35,6 +36,7 @@
 .MainSectionInput {
    text-align: center;
    height: 60px;
+   width: 600px;
 }
 
 .MainSectionSearchButton {
