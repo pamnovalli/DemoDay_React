@@ -18,8 +18,8 @@ import { Card, Button, CardImg, CardTitle, CardText,
         <h2 id="titulo" >ONGS</h2>
         <Container className="Cards">
           <Card className="Ong">
-            <Container className= "Nome">
-              <CardImg className="Image" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+            <Container className= "Teto">
+              <CardImg className="Image" width="30%" src="https://polenfiles.blob.core.windows.net/ongs/ong-teto-brasil-thumb.png" alt="Card image cap" />
               <CardTitle className="Titulo">Nome Ong</CardTitle>
             </Container>
             <CardBody>
