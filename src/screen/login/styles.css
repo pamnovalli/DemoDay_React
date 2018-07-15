@@ -1,16 +1,26 @@
 
-.Form{
-    margin-top: 150px;
-    margin-bottom: 420px;
+
+.LoginFormContainer {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 580px;
 }
 
-.Input{
-    width: 500%;
+.LoginForm {
+    min-width: 30%;
+    max-width: 90%;
+    padding-top: 36px;
+    padding-bottom: 36px;
 }
 
-#login{
+.LoginFormInput {
+    margin-top: 16px;
 }
 
-h1{
-    margin-bottom: 40px;
+.FullScreenDiv {
+  margin:0;
+  height: 100%;
 }

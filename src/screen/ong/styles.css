@@ -1,44 +1,54 @@
-.Pagina{
-    margin-top: 100px;
-    margin-bottom: 100px;
+.GroupContainer {
+    height: 800px;
 }
-
-#descricao{
-    margin-bottom: 100px;
+.GroupDetailContainer {
     display: flex;
+    flex: 1;
     flex-direction: column;
+    justify-content: center;
+    background-color: transparent;
+    height: 800px;
+}
+
+.GroupDetailHeaderContainer{
+    height: 500px;
+    background-color: transparent;
+    background-image: url('http://www.usingtheirwords.org/wp-content/uploads/2017/09/community-hero.png');
+    background-repeat:no-repeat;
+    background-size:length;    
+    background-position:center;
+}
+
+.GroupDetailHeaderContentContainer {
+    display: flex;
+    flex: 1;
+    height: 500px;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: flex-end;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-right: 64px;
+    padding-left: 64px;
+}
+
+.GroupNameLabel {
+    font-weight: bold;
+    font-size: 60px;
+    color: white;
+}
+
+.GroupTagsContainer {
+    display: flex;
+    flex: 1;
+    justify-content: center;
     align-items: center;
+    padding: 32px;
+    background-color:transparent;
 }
 
-#perfilong{
+.GroupDescriptionContainer {
     display: flex;
-    justify-content: space-around;
-}
-
-#imagem{
-    width: 30%;
-    height: 40%;
-}
-
-#sociais{
-    display: flex;
-    margin-bottom: 100px;
-}
-
-.Tags{
-    display: flex;
-}
-
-Button{
-    margin-right: 10px;
-}
-
-@media(min-width: 768px){
-    #imagem{
-        width: 15%;
-        margin-bottom: 50px;
-    }
-    h1{
-        margin-left: 10%;
-    }
+    flex: 1;
+    flex-direction: column;
+    padding: 64px;
 }

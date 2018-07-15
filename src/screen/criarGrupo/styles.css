@@ -1,39 +1,20 @@
-h1{
-    margin: 25px;
-    font-size: 25px;
-    font-weight: bold;
-}
-p{
-    margin:0;
-    font-weight: bold;
-}
-.Campos{
-    margin-left: 5vw;
-    width: 46vw;
-}
-#obs{
-    font-size: 13px;
-    color: red;
-    font-weight: normal;
-}
-#b{
-    margin: 10px;
-    width: 10vw;
-    margin-left: 45vw;
+.GroupRegistrationContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-@media(min-width: 768px){
-    h1{
-        margin-left: 26vw;
-        font-size: 35px;
-    }
-    .Campos{
-        margin-left: 27vw;
-       
-    }
-    #b{
-        margin: 10px;
-        width: 10vw;
-        margin-left: 45vw;
-    }
+.GroupRegistrationFormContainer {
+    margin-top: 80px;
+    min-width: 60%;
+    max-width: 90%;
+}
+
+.GroupRegistrationForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
 }
