@@ -20,8 +20,8 @@ export default class Perfil extends Component {
 
     userProfilePanel = () => (
         <div className="UserProfilePanel">
-            <img width="318px" heigth="180px" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
-            <h1>Nome do Usuário</h1>
+            <img  id="fotoperfil" width="150px" heigth="150px" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+            <h1 id="nome">Nome do Usuário</h1>
             <Tags tags = {["culinaria","tecnologia","lingua estrangeira","artesanato"]}/>
         </div>
     )
