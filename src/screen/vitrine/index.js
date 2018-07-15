@@ -60,7 +60,8 @@ import { Button, Form, Input } from 'reactstrap';
                   title={ong.title} 
                   subtitle={ong.subtitle} 
                   description={ong.description} 
-                  imageURL={ong.imageURL}/>
+                  imageURL={ong.imageURL}
+                  onClickDetails={() => this.props.history.push('/ong')} />
                 ))}
             </div>
           </div>
@@ -72,7 +73,8 @@ import { Button, Form, Input } from 'reactstrap';
                 title={community.title}
                 subtitle={community.subtitle} 
                 description={community.description} 
-                imageURL={community.imageURL}/>
+                imageURL={community.imageURL}
+                onClickDetails={() => this.props.history.push('/ong')}/>
               ))}
             </div>
           </div>

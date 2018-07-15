@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './styles.css';
 import Menu from '../../components/menu';
 import Footer from '../../components/footer';
-import { InputGroup, Form, Button, Input } from 'reactstrap';
+import { Form, Button, Input } from 'reactstrap';
 
 
 class LoginForm extends Component {
@@ -14,7 +14,7 @@ class LoginForm extends Component {
           <Input className="LoginFormInput" placeholder="Email" />
           <Input className="LoginFormInput" placeholder="Senha" />
         </Form>
-        <Button id="login" color="primary">Entrar</Button>
+        <Button color="primary" onClick={this.props.onLogin}>Entrar</Button>
       </div>
     )
   }
@@ -25,7 +25,9 @@ class Login extends Component {
     return (
       <div className="FullScreenDiv">
         <Menu />
-        <LoginForm />
+        <LoginForm onLogin={() => {
+          this.props.history.push('/perfil')
+        }}/>
         <Footer />
     </div>
   );

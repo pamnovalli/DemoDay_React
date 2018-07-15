@@ -113,7 +113,7 @@ class SingUpForm extends Component {
                         <Label for="profile-pic">Nos conte sobre seus objetivos ao se cadastrar em nossa plataforma:</Label>
                         <Input type="textarea" name="text" id="exampleText" />
                     </FormGroup>
-                    <Button id="registration-button" color="primary">Registrar</Button>
+                    <Button id="registration-button" color="primary" onClick={this.props.onSingup}>Registrar</Button>
                 </Form>
             </div>
         )
@@ -126,7 +126,9 @@ export default class Cadastro extends Component {
             <div>
                 <Menu />
                 <div className="SingUpContainer">
-                    <SingUpForm />  
+                    <SingUpForm onSingup={() => {
+                        this.props.history.push('/perfil')
+                    }}/> 
                 </div>
                 <Footer />
             </div>
