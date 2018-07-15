@@ -13,7 +13,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const CardPerson = (props) => (
     <div>
         <Card>
-            <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+            <CardImg style={{ width: "318px", height: "180px", objectFit: "cover", position: "center"}} src={props.imageURL} alt="Card image cap" />
             <CardBody>
                 <CardTitle>{props.name}</CardTitle>
                 <CardSubtitle>{props.work}</CardSubtitle>

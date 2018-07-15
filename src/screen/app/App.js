@@ -25,7 +25,8 @@ class App extends Component {
       {
         name: "Pamela",
         work: "Desenvolvedora Frontend",
-        bio: "Atualizar depois."
+        bio: "Atualizar depois.",
+        imageURL: "https://avatars2.githubusercontent.com/u/26384933?s=400&v=4"
       }],
     }
   }
@@ -41,7 +42,7 @@ class App extends Component {
         Acreditamos que o Voluntariado pode ser o catalisador da união, e que pessoas unidas podem realizar grandes feitos.
         ">
           <div className="Team-Section">
-            {this.state.people.map(person => (<CardPerson name={person.name} work={person.work} bio={person.bio}  />))}
+            {this.state.people.map(person => (<CardPerson name={person.name} work={person.work} bio={person.bio} imageURL={person.imageURL}  />))}
           </div>
         </ContentSection>
         <ContentSection id={'cadastrarong'} title="Cadastre sua ONG" content="Texto do Cadastre sua ONG aqui!"/>
