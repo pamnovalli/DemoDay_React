@@ -30,26 +30,26 @@ export default class Menu extends React.Component {
     return (
       <div>
         <Navbar color="light" light sticky-top expand="md" fixed={`top`}>
-          <NavbarBrand href="/">Voluntarize</NavbarBrand>
+        <NavbarBrand href="/">Voluntarize</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="mr-auto" navbar>
               <NavItem>
-                <Scrollchor to="#project" animate={{ offset: -60 }} className="nav-link">O projeto</Scrollchor>
+                <Scrollchor to="#project" className="nav-link">O projeto</Scrollchor>
               </NavItem>
               <NavItem>
                 <Scrollchor to="#about" className="nav-link">Quem Somos</Scrollchor>
               </NavItem>
+              <NavItem>
+                <Scrollchor to="#cadastrarong" className="nav-link">Cadastrar ONGS</Scrollchor>
+              </NavItem>
             </Nav>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="#entrar">Entrar</NavLink>
+                <NavLink href="login">Entrar</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="" disabled>/</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#criarconta">Cadastro</NavLink>
+                <NavLink href="cadastro">Criar conta</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

@@ -1,7 +1,7 @@
 .MainSection {
     display: flex;
-    height: 480px;
-    background-color: gainsboro;
+    height: 600px;
+    background-color: transparent;
     background-image: url('https://images.pexels.com/photos/1081223/pexels-photo-1081223.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     background-repeat:no-repeat;
     background-size:length;    
@@ -18,10 +18,27 @@
     color: white;
 }
 
-.Form {
-    width: 40%;
+.MainSectionForm {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    margin-top: 36px;
+    min-width: 60%;
+    max-width: 90%;
 }
 
-input{
-   text-align:center;
+.MainSectionGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.MainSectionInput {
+   text-align: center;
+   height: 60px;
+}
+
+.MainSectionSearchButton {
+   text-align: center;
+   width: 20%;
+   height: 60px;
 }

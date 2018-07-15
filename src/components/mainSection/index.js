@@ -12,12 +12,12 @@ render() {
             <h1> VOLUNTARIZE </h1>
             <h4>A maior plataforma de ONGs e Comunidades do Brasil!</h4>
 
-            <Form className="Form">
-                <FormGroup>
-                    <Input type="search" name="search" id="main_search" placeholder="Ex: Greenpeace" />
+            <Form className="MainSectionForm">
+                <FormGroup className="MainSectionGroup">
+                    <Input className="MainSectionInput" type="search" name="search" id="main_search" placeholder="Ex: Greenpeace" />
                 </FormGroup>
-                <Button color="primary">Buscar</Button>
             </Form>
+                <Button className="MainSectionSearchButton" type="submit" color="primary">Buscar</Button>
             </div>
         </div>
     );

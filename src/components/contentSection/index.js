@@ -3,13 +3,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 
 const ContentSection = (props) => (
-    <div id={props.id} className="ContentSection">
-        <div className="header">
+    <div id={props.id} className="ContentSectionBackground">
+        <div className="ContentSectionHeader">
             <h1>{props.title}</h1>
         </div>
-        <div className="content">
+        <div className="ContentSectionContent">
             {props.content}
         </div>
+        {props.children && props.children}
     </div>
 )
 
