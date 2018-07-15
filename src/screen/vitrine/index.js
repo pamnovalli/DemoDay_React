@@ -46,12 +46,6 @@ import { Button, Form, Input } from 'reactstrap';
           subtitle: "Subtitulo da Comunidade 3",
           description: "Descrição da Comunidade 3",
           imageURL: ""
-        },
-        {
-          title: "Comunidade 4",
-          subtitle: "Subtitulo da Comunidade 4",
-          description: "Descrição da Comunidade 4",
-          imageURL: ""
         }]
       }
     }
