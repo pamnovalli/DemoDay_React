@@ -3,7 +3,6 @@ import './styles.css';
 import Menu from '../../components/menu';
 import Footer from '../../components/footer';
 import Tags from '../../components/tags';
-import { Container, Button, ButtonGroup, NavLink, Card, CardImg} from 'reactstrap';
 
 class Ong extends Component {
 

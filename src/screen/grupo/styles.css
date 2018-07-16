@@ -1,0 +1,64 @@
+.GroupContainer {
+    height: 1000px;
+}
+.GroupDetailContainer {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    background-color: transparent;
+    height: 800px;
+    
+}
+
+.GroupDetailHeaderContainer{
+    height: 900px;
+    background-color: transparent;
+    background-image: url('http://www.radiozero.cl/static/2015/08/lenguaje-1200x500.jpg');
+    background-repeat:no-repeat;
+    background-size:length;    
+    background-position:center;
+    width: 100%;
+}
+
+.GroupDetailHeaderContentContainer {
+    display: flex;
+    flex: 1;
+    height: 500px;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: flex-end;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-right: 64px;
+    padding-left: 64px;
+}
+
+.GroupNameLabel {
+    font-weight: bold;
+    font-size: 60px;
+    color: white;
+}
+
+.GroupTagsContainer {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    background-color:transparent;
+}
+
+.GroupDescriptionContainer {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 64px;
+    margin-bottom: 100px;
+}
+
+.MidiasSociais{
+    font-weight: bold;
+    margin-left: 100px;
+    margin-bottom: 200px;
+    cursor: pointer;
+}

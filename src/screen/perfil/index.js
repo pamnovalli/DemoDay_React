@@ -3,17 +3,6 @@ import './styles.css';
 import Menu from '../../components/menu';
 import Footer from '../../components/footer';
 import Tags from '../../components/tags';
-import { 
-    Button, 
-    ButtonGroup, 
-    Container, 
-    Nav, 
-    NavLink,
-    Card, 
-    CardImg, 
-    CardBody,
-    CardTitle
-} from 'reactstrap';
 import { Link } from 'react-router-dom'
 
 
@@ -32,13 +21,24 @@ export default class Perfil extends Component {
         </div>
     )
 
-    communitiesPanel = (title) => (
+    communitiesPanelOng = (title) => (
         <div className="CommunityPanelContainer">
             <h2>{title}</h2>
-            <Link to={"/ong"}>Greenpeace</Link>
-            <Link to={"/ong"}>WTF</Link>
             <Link to={"/ong"}>Teto</Link>
-            <Link to={"/ong"}>Bem Amigos</Link>
+            <Link to={"/ong"}>Abrace</Link>
+            <Link to={"/ong"}>Amigos do Bem</Link>
+            <Link to={"/ong"}>Apae</Link>
+            <Link to={"/vitrine"}>Ver mais...</Link>
+        </div>
+    )
+
+    communitiesPanelGroup = (title) => (
+        <div className="CommunityPanelContainer">
+            <h2>{title}</h2>
+            <Link to={"/grupo"}>Capacita</Link>
+            <Link to={"/grupo"}>Protege</Link>
+            <Link to={"/grupo"}>Idioma Para Todos</Link>
+            <Link to={"/grupo"}>Bem Amigos</Link>
             <Link to={"/vitrine"}>Ver mais...</Link>
         </div>
     )
@@ -48,8 +48,8 @@ export default class Perfil extends Component {
             <div>
                 <Menu />
                 <div className="UserProfileContentContainer">
-                    {this.communitiesPanel("Minhas ONGs")}
-                    {this.communitiesPanel("Meus Grupos")}
+                    {this.communitiesPanelOng("Minhas ONGs")}
+                    {this.communitiesPanelGroup("Meus Grupos")}
                     {this.userProfilePanel()}
                 </div>
                 <Footer />

@@ -8,7 +8,6 @@ import {
   Nav,
   NavItem,
   NavLink,
-  CardImg,
   } from 'reactstrap';
 
 export default class Footer extends React.Component {

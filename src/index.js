@@ -8,6 +8,7 @@ import Cadastro from './screen/cadastro';
 import Perfil from './screen/perfil';
 import Ong from './screen/ong';
 import CriarGrupo from './screen/criarGrupo';
+import Grupo from './screen/grupo';
 import registerServiceWorker from './registerServiceWorker';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
@@ -21,6 +22,7 @@ ReactDOM.render(
         <Route path="/perfil" exact={true} component={Perfil} />
         <Route path="/criarGrupo" exact={true} component={CriarGrupo} />
         <Route path="/ong" exact={true} component={Ong} />
+        <Route path="/grupo" exact={true} component={Grupo} />
     </Switch>
 </ BrowserRouter>,  document.getElementById('root'));
 registerServiceWorker();
