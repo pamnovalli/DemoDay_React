@@ -16,17 +16,17 @@ class App extends Component {
       people: [{
         name: "Ana Maria",
         work: "Desenvolvedora Frontend",
-        bio: "Atualizar depois"
+        imageURL:"https://media.licdn.com/dms/image/C4D03AQEpEKSLWssq7Q/profile-displayphoto-shrink_200_200/0?e=1537401600&v=beta&t=Oax1tJtWzNAj3X8cs6zIDHS2yZMerIEmflqJ3tNfUPI"
+        
       },
       {
         name: "Laiane",
         work: "Desenvolvedora Fronted",
-        bio: "Atualizar depois."
+        imageURL: "http://pt-br.tinypic.com/view.php?pic=b6cwzm&s=9"
       },
       {
         name: "Pamela",
         work: "Desenvolvedora Frontend",
-        bio: "Atualizar depois.",
         imageURL: "https://avatars2.githubusercontent.com/u/26384933?s=400&v=4"
       }],
     }
