@@ -53,7 +53,8 @@ import { Button, Form, Input } from 'reactstrap';
                 <CardCommunity 
                   title={ong.title} 
                   description={ong.description} 
-                  imageURL={ong.imageURL}/>
+                  imageURL={ong.imageURL}
+                  onClickDetails={() => this.props.history.push('/ong')} />
                 ))}
             </div>
           </div>
@@ -64,7 +65,8 @@ import { Button, Form, Input } from 'reactstrap';
               <CardCommunity 
                 title={community.title}
                 description={community.description} 
-                imageURL={community.imageURL}/>
+                imageURL={community.imageURL}
+                onClickDetails={() => this.props.history.push('/ong')}/>
               ))}
             </div>
           </div>

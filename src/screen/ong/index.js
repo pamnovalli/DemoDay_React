@@ -12,7 +12,7 @@ class Ong extends Component {
         <div className="GroupDetailHeaderContainer">
           <div className="GroupDetailHeaderContentContainer">
             <div className="GroupNameLabel">
-              Nome da Comunidade
+              Nome da Organização
             </div>
           </div>
         </div>
