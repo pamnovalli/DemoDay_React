@@ -66,7 +66,7 @@ import { Button, Form, Input } from 'reactstrap';
                 title={community.title}
                 description={community.description} 
                 imageURL={community.imageURL}
-                onClickDetails={() => this.props.history.push('/ong')}/>
+                onClickDetails={() => this.props.history.push('/grupo')}/>
               ))}
             </div>
           </div>

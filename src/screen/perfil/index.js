@@ -22,11 +22,13 @@ export default class Perfil extends Component {
     userProfilePanel = () => (
         <div className="UserProfilePanel">
             <img 
-                style={{ width: "318px", height: "180px", objectFit: "cover", position: "center" }}
+                style={{ width: "100px", height: "120px", objectFit: "cover", position: "right" }}
                 src="https://avatars2.githubusercontent.com/u/26384933?s=400&v=4"
                 alt="Card image cap"
             />
             <Tags tags = {["culinaria","tecnologia","lingua estrangeira","artesanato"]}/>
+            <br />
+            <Link to={"/criarGrupo"}>Criar Grupo</Link>
         </div>
     )
 
@@ -47,7 +49,7 @@ export default class Perfil extends Component {
                 <Menu />
                 <div className="UserProfileContentContainer">
                     {this.communitiesPanel("Minhas ONGs")}
-                    {this.communitiesPanel("Meus Grupos e Comunidades")}
+                    {this.communitiesPanel("Meus Grupos")}
                     {this.userProfilePanel()}
                 </div>
                 <Footer />
