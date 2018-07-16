@@ -1,4 +1,5 @@
+
 .CardContainer {
-    background-color: rebeccapurple;
-    margin: 200px;
+    width: 300px;
+    font-family: 'Roboto', sans-serif;
 }

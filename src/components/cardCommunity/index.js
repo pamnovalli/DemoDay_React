@@ -9,14 +9,17 @@ import {
 } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 const CardCommunity = (props) => (
-    <div>
+    <div className="CardContainer">
         <Card>
             <CardImg style={{width: "318px", height: "180px", objectFit: "cover"}} src={props.imageURL} alt="Card image cap" />
             <CardBody>
                 <CardTitle>{props.title}</CardTitle>
                 <CardSubtitle>{props.subtitle}</CardSubtitle>
-                <CardText>{props.description}</CardText>
+                <CardText>{props.description.split("\n").map((item, i) => {
+                return (<p key={i}>{item }</p>)
+            })}</CardText>
             </CardBody>
         </Card>
     </div>
