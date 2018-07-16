@@ -11,39 +11,33 @@ import { Button, Form, Input } from 'reactstrap';
       super(props)
       this.state = {
         ongs: [{
-          title: "ONG 1",
-          subtitle: "Subtitulo da ONG 1",
-          description: "Descrição da ONG 1",
+          title: "Amigos do Bem",
+          description: "Promovem desenvolvimento \ne inclusão social, \ncombate a fome e a miséria por \n meio de ações educacionais e projetos\n autossustentáveis",
           imageURL: "https://d13q7w9s0p5d73.cloudfront.net/uploads/bvmf/aggregator/avatar/198/03886f0a-f86b-4ab7-9675-eb3e9fd8beaa.jpg"
         },
         {
-          title: "ONG 2",
-          subtitle: "Subtitulo da ONG 2",
-          description: "Descrição da ONG 2",
+          title: "Abrace",
+          description: "Assistência social a \ncrianças e adolescentes\ncom câncer e hemopatias, e suas famílias,\n visando à qualidade de vida\n e acesso a tratamento. ",
           imageURL: "http://blog.crb6.org.br/wp-content/uploads/2014/11/NOTA-3.31.jpg"
         },
         {
-          title: "ONG 3",
-          subtitle: "Subtitulo da ONG 3",
-          description: "Descrição da ONG 3",
-          imageURL: ""
+          title: "Teto",
+          description: "Trabalham em comunidades\n precárias para superar a pobreza\n por meio da formação e ação\n conjunta dos moradores e,\n jovens voluntários",
+          imageURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaX32cRTse9CEdAKhApLKLzHk7LSIHN0_qswSNPYyY1n3zMUBSiw"
         }
       ],
         communities: [{
           title: "Comunidade 1",
-          subtitle: "Subtitulo da Comunidade 1",
           description: "Descrição da Comunidade 1",
           imageURL: ""
         },
         {
           title: "Comunidade 2",
-          subtitle: "Subtitulo da Comunidade 2",
           description: "Descrição da Comunidade 2",
           imageURL: ""
         },
         {
           title: "Comunidade 3",
-          subtitle: "Subtitulo da Comunidade 3",
           description: "Descrição da Comunidade 3",
           imageURL: ""
         }]
@@ -58,7 +52,6 @@ import { Button, Form, Input } from 'reactstrap';
               {this.state.ongs.map(ong => (
                 <CardCommunity 
                   title={ong.title} 
-                  subtitle={ong.subtitle} 
                   description={ong.description} 
                   imageURL={ong.imageURL}
                   onClickDetails={() => this.props.history.push('/ong')} />
@@ -71,7 +64,6 @@ import { Button, Form, Input } from 'reactstrap';
             {this.state.communities.map(community => (
               <CardCommunity 
                 title={community.title}
-                subtitle={community.subtitle} 
                 description={community.description} 
                 imageURL={community.imageURL}
                 onClickDetails={() => this.props.history.push('/ong')}/>

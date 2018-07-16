@@ -8,7 +8,10 @@ const ContentSection = (props) => (
             <h1>{props.title}</h1>
         </div>
         <div className="ContentSectionContent">
-            {props.content}
+            {props.content.split("\\n").map((item, i) => {
+                console.log("linha")
+                return (<p key={i}>{item }</p>)
+            })}
         </div>
         {props.children && props.children}
     </div>
