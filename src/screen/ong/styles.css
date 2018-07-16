@@ -1,0 +1,54 @@
+.GroupContainer {
+    height: 800px;
+}
+.GroupDetailContainer {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    background-color: transparent;
+    height: 800px;
+}
+
+.GroupDetailHeaderContainer{
+    height: 500px;
+    background-color: transparent;
+    background-image: url('http://www.usingtheirwords.org/wp-content/uploads/2017/09/community-hero.png');
+    background-repeat:no-repeat;
+    background-size:length;    
+    background-position:center;
+}
+
+.GroupDetailHeaderContentContainer {
+    display: flex;
+    flex: 1;
+    height: 500px;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: flex-end;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-right: 64px;
+    padding-left: 64px;
+}
+
+.GroupNameLabel {
+    font-weight: bold;
+    font-size: 60px;
+    color: white;
+}
+
+.GroupTagsContainer {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    background-color:transparent;
+}
+
+.GroupDescriptionContainer {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 64px;
+}
