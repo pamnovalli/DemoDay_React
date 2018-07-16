@@ -19,40 +19,37 @@ import { Link } from 'react-router-dom'
 
 export default class Perfil extends Component {
 
-   
-    communityPanel = () => (
-        <div className="CommunityPanel">
-            <div className="Community">
-                <h2>Minhas ONGs</h2>
-                <Link to={"/ong"}>Teto</Link>
-                <Link to={"/ong"}>Teto</Link>
-                <Link to={"/ong"}>Teto</Link>
-            </div>
-            <div className="Community">
-                <h2>Meus Grupos</h2>
-                <Link to={"/ong"}>Teto</Link>
-                <Link to={"/ong"}>Teto</Link>
-                <Link to={"/ong"}>Teto</Link>
-            </div>
-        </div>
-    )
-
     userProfilePanel = () => (
         <div className="UserProfilePanel">
-            <img  id="fotoperfil" width="60px" heigth="50px" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+            <img 
+                style={{ width: "318px", height: "180px", objectFit: "cover", position: "center" }}
+                src="https://avatars2.githubusercontent.com/u/26384933?s=400&v=4"
+                alt="Card image cap"
+            />
             <Tags tags = {["culinaria","tecnologia","lingua estrangeira","artesanato"]}/>
         </div>
     )
 
+    communitiesPanel = (title) => (
+        <div className="CommunityPanelContainer">
+            <h2>{title}</h2>
+            <Link to={"/ong"}>Greenpeace</Link>
+            <Link to={"/ong"}>WTF</Link>
+            <Link to={"/ong"}>Teto</Link>
+            <Link to={"/ong"}>Bem Amigos</Link>
+            <Link to={"/vitrine"}>Ver mais...</Link>
+        </div>
+    )
 
     render() {
         return (
             <div>
                 <Menu />
-                <div className="UserProfileContainer">
-                    {this.communityPanel()}
+                <div className="UserProfileContentContainer">
+                    {this.communitiesPanel("Minhas ONGs")}
+                    {this.communitiesPanel("Meus Grupos e Comunidades")}
                     {this.userProfilePanel()}
-                </div>>
+                </div>
                 <Footer />
             </div>
         );
