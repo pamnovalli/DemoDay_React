@@ -1,8 +1,0 @@
-.TagsContainer {
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: aquamarine;
-}

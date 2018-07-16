@@ -1,5 +1,5 @@
 .App {
-  background-color:lightgray;
+  text-align: center;
 }
 
 .App-logo {
@@ -20,15 +20,6 @@
 
 .App-intro {
   font-size: large;
-}
-
-.Team-Section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: stretch;
-  margin-top: 24px;
-  flex-wrap: wrap;
 }
 
 @keyframes App-logo-spin {
